@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Europe's Grid figures</title>
+<meta name="description" content="Interactive figures for the Europe's Grid newsletter: crafted isometric models of the machines the grid runs on.">
+<style>
+  :root { color-scheme: light dark; --paper: #fbfbfa; --ink: #18181a; --muted: #6e6e72; --line: #d4d4d6; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #0b0b0b; --ink: #e6e6e6; --muted: #8a8a8a; --line: #2a2a2a; --card: #131313; } }
+  html { background: var(--paper); }
+  body { margin: 0; padding: 48px 16px 64px; font: 16px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: var(--ink); max-width: 720px; margin-inline: auto; }
+  h1 { font-size: 18px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; margin: 0 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 32px; }
+  .fig { display: block; border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 18px 20px; text-decoration: none; color: inherit; margin-bottom: 16px; }
+  .fig:hover { border-color: var(--muted); }
+  .fig b { display: block; font-weight: 500; margin-bottom: 4px; }
+  .fig span { color: var(--muted); font-size: 14px; }
+  .alt { color: var(--muted); font-size: 14px; margin: -8px 0 24px 2px; }
+  .alt a { color: inherit; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<h1>Europe's Grid · figures</h1>
+<p class="lead">Interactive isometric models of the machines the grid runs on. Hover, or use the arrow keys.</p>
+
+<a class="fig" href="pwr-loop/">
+  <b>Fig 1 · EPR, one loop</b>
+  <span>A sectioned model of one Olkiluoto 3 loop: reactor vessel, hot leg, steam generator, crossover leg, pump, cold leg and pressuriser. Move the control rods and watch the temperatures follow.</span>
+</a>
+<p class="alt"><a href="pwr-loop/dark.html">dark version</a></p>
+
+<footer>Figures built with <a href="https://github.com/wheresryan22/anatomy">Anatomy</a>. Numbers on each card cite their source in the caption.</footer>
+</body>
+</html>
